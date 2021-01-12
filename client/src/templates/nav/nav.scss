@@ -1,0 +1,28 @@
+.nav {
+  .nav__profile {
+    position: relative;
+    img {
+      border-radius: 50%;
+    }
+    span {
+      margin-right: 5px;
+    }
+  }
+  .nav__profileMenu {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+
+    padding: 6px;
+    background-color: #535353;
+
+    font-size: 14px;
+
+    &.nav__profileMenu--open {
+      display: block;
+    }
+  }
+}

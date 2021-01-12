@@ -1,0 +1,45 @@
+.episodes {
+}
+
+.episodeItem {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.episodeCover {
+  flex: 0 0 112px;
+  height: 112px;
+  border-radius: 8px;
+  margin-right: 16px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.episodeContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 14px;
+    margin: 6px 0 6px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #b3b3b3;
+    margin: 0;
+  }
+
+  .episodeReleaseDate {
+    margin-top: auto;
+    font-size: 14px;
+  }
+}

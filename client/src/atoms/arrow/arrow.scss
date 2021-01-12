@@ -1,0 +1,16 @@
+.arrow {
+  transition: transform ease-in-out 200ms;
+
+  &.arrow--left {
+    transform: rotate(-90deg);
+  }
+  &.arrow--right {
+    transform: rotate(90deg);
+  }
+  &.arrow--top {
+    transform: rotate(180deg);
+  }
+  &.arrow--bottom {
+    transform: rotate(0deg);
+  }
+}

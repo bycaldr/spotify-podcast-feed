@@ -1,0 +1,22 @@
+service: default
+runtime: nodejs12
+
+instance_class: F1
+
+env_variables:
+  APP_ENV: production
+
+handlers:
+- url: /api/.*
+  secure: always
+  script: auto
+
+- url: /(.*\.(png|ico|svg|css|js|jpg|jpeg|xml|woff|ttf|eot|webmanifest))$
+  secure: always
+  static_files: client/dist/\1
+  upload: client/dist/.*\.(png|ico|svg|css|js|jpg|jpeg|xml|woff|ttf|eot|webmanifest)$
+
+- url: '/(.*)'
+  secure: always
+  static_files: client/dist/index.html
+  upload: client/dist/index.html

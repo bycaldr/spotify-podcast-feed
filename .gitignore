@@ -1,0 +1,19 @@
+# Tmp, Logs
+*.log
+
+# Npmrc
+.npmrc
+
+# TS cache
+tsconfig.build.tsbuildinfo
+
+# Modules
+node_modules/
+
+# Built code
+build/
+dist/
+*.cache/
+
+# dotenv
+*.env*

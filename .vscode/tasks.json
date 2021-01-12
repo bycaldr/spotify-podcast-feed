@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.build.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+			"label": "tsc: build - tsconfig.build.json"
+		},
+		{
+			"type": "npm",
+			"script": "dev:client",
+			"problemMatcher": [],
+			"label": "npm: dev:client",
+			"detail": "cd client && parcel src/index.html -p 8081"
+		}
+	]
+}
